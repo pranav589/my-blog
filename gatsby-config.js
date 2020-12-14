@@ -5,8 +5,8 @@ module.exports = {
       name: `Pranav Bakale`,
       summary: `who lives in Nashik,Maharashtra and is a Full-Stack Web Developer.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `This is my blog site`,
+    siteUrl: `https://csb-9esd9-bnc7hg1hp.vercel.app/`,
     social: {
       twitter: `Pranavbakale`,
       github:'pranav589',
