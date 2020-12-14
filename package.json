@@ -3,9 +3,9 @@
   "private": true,
   "description": "",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Pranav Bakale",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/pranav589/my-blog/issues"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
