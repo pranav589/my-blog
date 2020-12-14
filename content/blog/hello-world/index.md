@@ -1,231 +1,92 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+title: Github for beginners
+date: "2020-12-14T22:12:03.284Z"
 description: "Hello World"
 ---
 
-This is my first post on my new fake blog! How exciting!
+Hello everyone, I hope all are doing great.This is my first ever blog and I am damn excited for this.
 
 I'm sure I'll write a lot more interesting things in the future.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+Today we are going to learn about GITHUB. What is github,how to use it and all such questions will be answered. So read the blog till the end and lets get started.
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
 
-![Chinese Salty Egg](./salty_egg.jpg)
+## Step-01: What is Github?
 
-You can also write code blocks here!
+  To be very precise about what exactly is GitHub, it is a file or code-sharing service to collaborate with different people. 
+  
+  Github is a highly demanded and highly used version control system. It is very helpful for the projects which have more than one contributor. By using github more than one peroson can work on the same project simultaneously. Sounds cool right?
 
+
+## Step-02: How to make a github repository?
+
+1. First and the most basic thing that you require for using github is an account on github. So head over to [Github](https://www.github.com) and create your account there which is quite straight forward. And install git on your local machine. Your can refer git docs for the installation which is quite easy as well.
+
+2. Then click on start new project.
+
+![Github start project](./github1.png)
+
+3. Fill your repository name, description(optional) and then click on create repository.And your repositoy is generated. Congratulations.
+![Github create repository](./github2.png)
+It also has a PUBLIC , PRIVATE options which by default is PUBLIC that means everyone can see our code which is called "open source". 
+
+4. Now there are certain commands given by git that can be used for specific operations.For instance, fo pushing our code to github, we have a specific command or for pulling the code on our local machine from github , we have a separate command. We are going to learn all those commands one by one.
+
+All these commands should be made using your local terminal or the terminal provided by your code editor.
+
+#####  git init
 ```js
-const saltyDuckEgg = "chinese preserved food product"
+git init
 ```
+This command initalizes a  .git file for your local project.
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
-
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
-
-This is a paragraph.
-
-    This is a paragraph.
-
-# Header 1
-
-## Header 2
-
-    Header 1
-    ========
-
-    Header 2
-    --------
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1
-    ## Header 2
-    ### Header 3
-    #### Header 4
-    ##### Header 5
-    ###### Header 6
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1 #
-    ## Header 2 ##
-    ### Header 3 ###
-    #### Header 4 ####
-    ##### Header 5 #####
-    ###### Header 6 ######
-
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> ## This is a header.
->
-> 1. This is the first list item.
-> 2. This is the second list item.
->
-> Here's some example code:
->
->     Markdown.generate();
-
-    > ## This is a header.
-    > 1. This is the first list item.
-    > 2. This is the second list item.
-    >
-    > Here's some example code:
-    >
-    >     Markdown.generate();
-
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-
-```markdown
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
+#####  git add
+```js
+git add .
 ```
+This command is used to add our local file changes to our git initiliazed file. The dot(.) at the end indicates that all the files should be added. You can type individual names of the files as well.
 
-- `code goes` here in this line
-- **bold** goes here
 
-```markdown
-- `code goes` here in this line
-- **bold** goes here
+#####  git commit
+```js
+git commit -m 'commit description'
 ```
+This command is used for making commits and the commit should have a meaningful description.
 
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-
-```markdown
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
+#####  git remote add origin 
+```js
+git remote add origin https://github.com/pranav589/example.git
 ```
+This command adds the code to the remote server.
 
-1. `code goes` here in this line
-1. **bold** goes here
-
-```markdown
-1. `code goes` here in this line
-1. **bold** goes here
+##### git push -u origin main 
+```js
+git push -u origin master
 ```
+This command is used to push your code from your local machine to github.Refresh the page and you can see your code.
 
-Paragraph:
 
-    Code
+##### git pull 
+```js
+git pull <remote>
+```
+The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
 
-<!-- -->
+##### git clone 
+```js
+git clone <remote>
+```
+git clone  is used to target an existing repository and create a clone, or copy of the target repository.
 
-    Paragraph:
+##### git branch 
+```js
+git branch <name>
+```
+git branch command is used for creating a branch of an existing project so that different people can work on the same project simultaneously.
 
-        Code
 
----
+There are few more commands that can used to perform certain operations. But all these commands that we learnt today are the most basic but important commands.
 
----
+Thank you for reading!!
 
----
 
----
-
----
-
-    * * *
-
-    ***
-
-    *****
-
-    - - -
-
-    ---------------------------------------
-
-This is [an example](http://example.com "Example") link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
-
-    This is [an example](http://example.com "Example") link.
-
-    [This link](http://example.com) has no title attr.
-
-    This is [an example] [id] reference-style link.
-
-    [id]: http://example.com "Optional Title"
-
-_single asterisks_
-
-_single underscores_
-
-**double asterisks**
-
-**double underscores**
-
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-
-This paragraph has some `code` in it.
-
-    This paragraph has some `code` in it.
-
-![Alt Text](https://placehold.it/200x50 "Image Title")
-
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
