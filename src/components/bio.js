@@ -47,7 +47,7 @@ const Bio = () => {
           alt={author?.name || ``}
           className="bio-avatar"
           imgStyle={{
-            borderRadius: `50%`,
+            borderRadius: `50%`
           }}
         />
       )}
@@ -55,12 +55,8 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            Twitter
-          </a>
-          <a href={`https://www.github.com/${social?.github || ``}`}>
-            Github
-          </a>
+          <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
+          <a href={`https://www.github.com/${social?.github || ``}`}>Github</a>
         </p>
       )}
     </div>
